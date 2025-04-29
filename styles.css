@@ -1,0 +1,156 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Young-Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Stone-100);
+    font-family: 'Outfit';
+    color: var(--Stone-600);
+}
+
+p {
+    color: var(--Stone-600);
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    background-color: var(--Stone-150);
+    margin: 1.5em auto;
+}
+
+.container {
+    background-color: var(--White);
+    width: 55%;
+    padding: 3rem;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.hero-title {
+    font-family: 'Young-Serif';
+    margin: 1.5rem 0 1rem 0;
+    color: var(--Stone-900);
+}
+
+.hero-description {
+    color: var(--Stone-600);
+    margin-bottom: 1em;
+}
+
+.preparation-time-div {
+    background-color: var(--Rose-50);
+    padding: 1.5em;
+    border-radius: 1em;
+    margin: 1em auto;
+
+}
+
+.preparation-time-heading {
+    color: var(--Rose-800);
+    font-size: 1.4em;
+}
+
+.preparation-time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+
+.preparation-time-list li {
+    padding-left: 1.5em;
+}
+
+.preparation-time-list li::marker {
+    color: var(--Rose-800);
+}
+
+.ingredients-title,
+.instructions-title,
+.nutrition-title {
+    font-family: Young-Serif;
+    color: var(--Brown-800);
+    margin: 0.5em auto;
+    font-size: 2em;
+}
+
+.ingredients-list,
+.instructions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.ingredients-list li,
+.instructions-list li {
+    padding-left: 1.5em;
+}
+
+.ingredients-list li::marker {
+    color: var(--Brown-800);
+}
+
+.instructions-list li::marker {
+    font-weight: bold;
+    color: var(--Rose-800);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+/* Table Rows  */
+tr {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+
+td {
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+td:last-child {
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
